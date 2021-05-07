@@ -12,6 +12,7 @@ const moveTarget = document.getElementById('move-target');
 const run = document.getElementById('run');
 const leftBtn = document.getElementById('left-btn');
 const rightBar = document.querySelector('.right-bar');
+const input = document.getElementById('input');
 
 const getData = async (value, callback) => {
   const data = await fetch(`https://pokeapi.co/api/v2/pokemon/${value}`);
@@ -37,7 +38,7 @@ leftBtn.addEventListener('click', () => {
   console.log(rightBar.classList);
 });
 
-run.addEventListener('click', () => {
+const RunTheCode = () => {
   const input = document.getElementById('input').value;
   getData(input, (data) => {
     console.log(data);
@@ -87,4 +88,14 @@ run.addEventListener('click', () => {
     sprite.innerHTML = '';
     sprite.appendChild(createImg(data));
   });
+};
+
+run.addEventListener('click', () => {
+  RunTheCode();
+});
+
+input.addEventListener('keyup', (e) => {
+  if (e.key === 'Enter') {
+    RunTheCode();
+  }
 });
