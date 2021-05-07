@@ -83,10 +83,10 @@ html {
 
 #sticker2 {
   position: absolute;
-  bottom: -140px;
-  left: -40px;
-  width: 350px;
-  height: 350px;
+  bottom: 15px;
+  left: 0px;
+  width: 260px;
+  height: 43px;
 }
 
 #right-bar-inner {
