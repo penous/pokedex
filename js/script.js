@@ -78,7 +78,10 @@ const RunTheCode = () => {
 
     // Getting moves
     moveTarget.innerHTML = '';
-    for (let i = 0; i < 8; i++) {
+    let moveCounter = 0;
+    moveCounter = data.moves.length > 8 ? 8 : data.moves.length;
+    console.log(moveCounter);
+    for (let i = 0; i < moveCounter; i++) {
       const clone = template.content.cloneNode(true);
       console.log(data.moves[i]);
       clone.querySelector('.move').textContent = data.moves[i].move.name;
@@ -95,6 +98,7 @@ run.addEventListener('click', () => {
 });
 
 input.addEventListener('keyup', (e) => {
+  console.log(e.key);
   if (e.key === 'Enter') {
     RunTheCode();
   }
