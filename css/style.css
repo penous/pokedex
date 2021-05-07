@@ -10,6 +10,7 @@ html {
 #pokedex {
   margin: 100px auto auto 10%;
   font-family: 'VT323', monospace;
+  display: flex;
 }
 
 #left-bar {
@@ -24,7 +25,34 @@ html {
   box-shadow: -2px 2px rgb(113, 28, 28), -4px 4px rgb(0, 0, 0);
 }
 
+#right-bar {
+  height: 500px;
+  width: 400px;
+  background-color: rgb(159, 45, 45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 6px 0 4px 6px;
+  box-shadow: -3px 0 7px 0 rgba(0, 0, 0, 0.7) inset, -2px 0px rgb(113, 28, 28),
+    -3px 0px rgb(0, 0, 0);
+  margin-left: -6px;
+  margin-top: 3px;
+}
+
 #left-bar-inner {
+  height: 95%;
+  width: 95%;
+  background-color: rgb(113, 28, 28);
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  flex-direction: column;
+}
+
+#right-bar-inner {
   height: 95%;
   width: 95%;
   background-color: rgb(113, 28, 28);
@@ -52,6 +80,27 @@ html {
   background-color: #9cc2c2;
   height: 70%;
   width: 80%;
+  border-radius: 6px;
+  box-shadow: -2px 2px black inset;
+  position: relative;
+}
+
+#right-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(235, 227, 215);
+  height: 70%;
+  width: 90%;
+  border-radius: 6px;
+  border: 1px solid black;
+  box-shadow: -2px 2px rgb(235, 227, 215), -4px 4px rgb(0, 0, 0);
+}
+
+#right-middle-screen {
+  background-color: #9cc2c2;
+  height: 95%;
+  width: 95%;
   border-radius: 6px;
   box-shadow: -2px 2px black inset;
   position: relative;
