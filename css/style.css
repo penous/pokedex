@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 body,
 html {
   margin: 0;
@@ -7,6 +9,7 @@ html {
 
 #pokedex {
   margin: 100px auto auto 10%;
+  font-family: 'VT323', monospace;
 }
 
 #left-bar {
@@ -45,10 +48,45 @@ html {
 }
 
 #left-middle-screen {
-  background-color: rgb(33, 33, 33);
+  background-color: #9cc2c2;
   height: 70%;
   width: 80%;
   border-radius: 6px;
+  box-shadow: -2px 2px black inset;
+}
+
+#title {
+  display: flex;
+  justify-content: space-around;
+}
+
+#title p {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+#image-main {
+  text-align: center;
+}
+
+#image-main > * {
+  width: 75px;
+  height: 75px;
+  margin: 5px auto 0;
+}
+
+#evo-chain {
+  display: flex;
+  justify-content: space-around;
+  border-top: grey 1px solid;
+  background-color: rgba(255, 255, 255, 0.324);
+}
+
+#evo-chain > * {
+  height: 55px;
+  width: 55px;
 }
 
 #left-bottom-buttons {
