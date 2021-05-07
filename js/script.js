@@ -10,6 +10,8 @@ const chain = document.getElementById('evo-chain');
 const template = document.getElementById('tpl-moves');
 const moveTarget = document.getElementById('move-target');
 const run = document.getElementById('run');
+const leftBtn = document.getElementById('left-btn');
+const rightBar = document.querySelector('.right-bar');
 
 const getData = async (value, callback) => {
   const data = await fetch(`https://pokeapi.co/api/v2/pokemon/${value}`);
@@ -29,6 +31,11 @@ const createImg = (data) => {
   img.alt = `${data.name} was here`;
   return img;
 };
+
+leftBtn.addEventListener('click', () => {
+  rightBar.classList.toggle('slider');
+  console.log(rightBar.classList);
+});
 
 run.addEventListener('click', () => {
   const input = document.getElementById('input').value;
