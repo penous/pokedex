@@ -21,6 +21,7 @@ html {
   align-items: center;
   border: 1px solid black;
   border-radius: 6px;
+  box-shadow: -2px 2px rgb(113, 28, 28), -4px 4px rgb(0, 0, 0);
 }
 
 #left-bar-inner {
@@ -53,6 +54,7 @@ html {
   width: 80%;
   border-radius: 6px;
   box-shadow: -2px 2px black inset;
+  position: relative;
 }
 
 #title {
@@ -67,8 +69,37 @@ html {
   margin-bottom: 0;
 }
 
+#middle-screen-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+#stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#stats > * {
+  font-size: 1.1rem;
+}
+
+#name {
+  /* display: inline-block; */
+  /* position: absolute; */
+  /* top: 40%; */
+  /* transform: translate(0, -50%); */
+  /* left: 10px; */
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  /* bottom: 0; */
+  /* margin: auto 0; */
+}
+
 #image-main {
   text-align: center;
+  /* margin-left: 80px; */
+  /* display: inline-block; */
 }
 
 #image-main > * {

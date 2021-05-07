@@ -2,7 +2,9 @@ const target = document.getElementById('target');
 const health = document.getElementById('health');
 const power = document.getElementById('power');
 const type = document.getElementById('type');
-const name = document.getElementById('name');
+const namee = document.getElementById('name');
+const height = document.getElementById('height');
+const weight = document.getElementById('weight');
 const sprite = document.getElementById('image-main');
 const chain = document.getElementById('evo-chain');
 
@@ -30,6 +32,9 @@ getData(6, (data) => {
   health.textContent = `${data.stats[0].base_stat} HP`;
   power.textContent = `${data.stats[1].base_stat} Attack`;
   type.textContent = `${data.types[0].type.name}`;
+  namee.textContent = `${data.id}•${data.name}`;
+  height.textContent = `HT•${data.height}\"`;
+  weight.textContent = `WT•${data.weight} lbs`;
   for (let key in data.chain) {
     if (key === 'species') {
       getData(data.chain[key].name, (data) => {
@@ -54,5 +59,4 @@ getData(6, (data) => {
     }
   }
   sprite.appendChild(createImg(data));
-  // target.textContent = ` The name is: ${data.name} and he evolves from: ${data.evolves_from_species.name}`;
 });
