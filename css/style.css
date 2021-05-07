@@ -104,6 +104,10 @@ html {
   border-radius: 6px;
   box-shadow: -2px 2px black inset;
   position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 }
 
 #title {
@@ -291,4 +295,29 @@ html {
   position: absolute;
   transform: translate(0px, 25px);
   box-shadow: -3px 2px #010101;
+}
+
+#move-target {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+
+#input {
+  background-color: transparent;
+  color: black;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+#run {
+  margin: 0;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: none;
+  /* border: 1px solid black; */
+  cursor: pointer;
+}
+
+#run p {
+  margin: 0;
 }
