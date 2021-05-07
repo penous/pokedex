@@ -50,6 +50,15 @@ html {
   align-items: center;
   border-radius: 6px;
   flex-direction: column;
+  position: relative;
+}
+
+#sticker2 {
+  position: absolute;
+  bottom: -140px;
+  left: -40px;
+  width: 350px;
+  height: 350px;
 }
 
 #right-bar-inner {
