@@ -73,6 +73,14 @@ html {
   position: relative;
 }
 
+#sticker1 {
+  position: absolute;
+  left: 10px;
+  top: -70px;
+  width: 250px;
+  height: 250px;
+}
+
 #sticker2 {
   position: absolute;
   bottom: -140px;
@@ -91,6 +99,7 @@ html {
   align-items: center;
   border-radius: 6px;
   flex-direction: column;
+  position: relative;
 }
 
 #left-screen {
@@ -124,6 +133,7 @@ html {
   border-radius: 6px;
   border: 1px solid black;
   box-shadow: -2px 2px rgb(235, 227, 215), -4px 4px rgb(0, 0, 0);
+  margin-top: 25%;
 }
 
 #right-middle-screen {
